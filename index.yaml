@@ -3,6 +3,29 @@ entries:
   fem:
   - apiVersion: v2
     appVersion: 1.1.0
+    created: "2024-05-29T14:25:11.610305282Z"
+    dependencies:
+    - condition: loki.enabled
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: ^2.15.2
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: ~6.43.0
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: ~19.7.2
+    description: A Helm chart for Kubernetes
+    digest: 2db4a5de58ce45b7eefc154637fffe9bd1c862e4581e2edbbbeeced7e1acb70b
+    name: fem
+    type: application
+    urls:
+    - https://github.com/FLiPp3r90/helm-charts/releases/download/fem-0.1.2/fem-0.1.2.tgz
+    version: 0.1.2
+  - apiVersion: v2
+    appVersion: 1.1.0
     created: "2024-05-29T14:21:39.97504574Z"
     dependencies:
     - condition: loki.enabled
@@ -47,4 +70,4 @@ entries:
     urls:
     - https://github.com/FLiPp3r90/helm-charts/releases/download/fem-0.1.0/fem-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-29T14:21:39.975057101Z"
+generated: "2024-05-29T14:25:11.610319298Z"
