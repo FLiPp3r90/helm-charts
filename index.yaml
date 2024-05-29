@@ -3,6 +3,29 @@ entries:
   fem:
   - apiVersion: v2
     appVersion: 1.1.0
+    created: "2024-05-29T14:28:47.190862319Z"
+    dependencies:
+    - condition: loki.enabled
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: ^2.15.2
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: ~6.43.0
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: ~19.7.2
+    description: A Helm chart for Falcon Eye Monitoring
+    digest: dc21bf39a526c0d2613f9f10d8a2f6387b82bebcfe29f3c44ff6dee8e4f7c8d5
+    name: fem
+    type: application
+    urls:
+    - https://github.com/FLiPp3r90/helm-charts/releases/download/fem-0.1.3/fem-0.1.3.tgz
+    version: 0.1.3
+  - apiVersion: v2
+    appVersion: 1.1.0
     created: "2024-05-29T14:25:11.610305282Z"
     dependencies:
     - condition: loki.enabled
@@ -70,4 +93,4 @@ entries:
     urls:
     - https://github.com/FLiPp3r90/helm-charts/releases/download/fem-0.1.0/fem-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-29T14:25:11.610319298Z"
+generated: "2024-05-29T14:28:47.190883809Z"
