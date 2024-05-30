@@ -39,7 +39,7 @@ prometheus:
   datasource:
     jsonData: "{}"
 
-jaegertracing:
+jaeger:
   enabled: true
 
 opensearch:

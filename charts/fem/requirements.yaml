@@ -11,7 +11,7 @@ dependencies:
   condition: prometheus.enabled
   version: "~19.7.2"
   repository:  "https://prometheus-community.github.io/helm-charts"
-- name: "jaegertracing"
+- name: "jaeger"
   condition: jaeger.enabled
   version: "3.0.10"
   repository: "https://jaegertracing.github.io/helm-charts"
