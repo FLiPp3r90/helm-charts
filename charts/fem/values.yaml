@@ -39,6 +39,9 @@ jaeger:
 
 opensearch:
   enabled: true
+  extraEnvs:
+    - name: DISABLE_INSTALL_DEMO_CONFIG
+      value: "true"
 
 prometheus-elasticsearch-exporter:
   enabled: true
