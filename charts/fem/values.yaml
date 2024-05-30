@@ -48,7 +48,8 @@ opensearch:
   clusterName: "fem-opensearch"
   securityConfig:
     enabled: false
-  sysctlInit: true
+  sysctlInit:
+    enabled: true
   sysctlVmMaxMapCount: 262144
 
 prometheus-elasticsearch-exporter:
