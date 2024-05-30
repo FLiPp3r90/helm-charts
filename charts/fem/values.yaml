@@ -39,13 +39,16 @@ jaeger:
 
 opensearch:
   enabled: true
-  securityConfig:
-    enabled: false
   extraEnvs:
     - name: DISABLE_INSTALL_DEMO_CONFIG
-      value: "false"
+      value: "true"
     - name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
       value: "Exmpe-132!"
+  single-node: true
+  clusterName: "fem-cluster"
+  replicas: 1
+  securityConfig:
+    enabled: false
 
 prometheus-elasticsearch-exporter:
   enabled: true
