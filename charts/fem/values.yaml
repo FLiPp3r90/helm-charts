@@ -51,6 +51,9 @@ opentelemetry-collector:
 
 traefik:
   enabled: true
+  ingressRoute:
+    dashboard:
+      enabled: true
 
 # proxy is currently only used by loki test pod
 # Note: If http_proxy/https_proxy are set, then no_proxy should include the
