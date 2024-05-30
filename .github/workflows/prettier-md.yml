@@ -1,0 +1,24 @@
+---
+# https://github.com/creyD/prettier_action
+name: Prettier markdown files
+
+on:
+  push:
+    paths:
+      - '**.md'
+
+jobs:
+  prettier-md:
+    runs-on: ubuntu-latest
+    timeout-minutes: 1
+
+    steps:
+      - name: Git checkout
+        uses: actions/checkout@b4ffde65f46336ab88eb53be808477a3936bae11 # v4
+        with:
+          ref: ${{ github.head_ref }}
+
+      - name: Prettify code
+        uses: creyD/prettier_action@31355f8eef017f8aeba2e0bc09d8502b13dbbad1 # v4.3
+        with:
+          prettier_options: --write {**/*,*}.md
