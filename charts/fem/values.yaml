@@ -42,11 +42,10 @@ opensearch:
   extraEnvs:
     - name: DISABLE_INSTALL_DEMO_CONFIG
       value: "true"
-    #- name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
-    #  value: "Exmpe-132!"
+    - name: DISABLE_SECURITY_PLUGIN
+      value: "true"
   single-node: true
-  clusterName: "fem-cluster"
-  replicas: 1
+  clusterName: "fem-opensearch"
   securityConfig:
     enabled: false
 
