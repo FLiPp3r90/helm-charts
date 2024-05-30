@@ -50,6 +50,8 @@ prometheus-elasticsearch-exporter:
 
 opentelemetry-collector:
   enabled: true
+  image:
+    repository: "otel/opentelemetry-collector-k8s"
 
 traefik:
   enabled: true
