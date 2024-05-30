@@ -3,6 +3,49 @@ entries:
   fem:
   - apiVersion: v2
     appVersion: 1.1.0
+    created: "2024-05-30T12:38:04.321211557Z"
+    dependencies:
+    - condition: loki.enabled
+      name: loki
+      repository: https://grafana.github.io/helm-charts
+      version: ^2.15.2
+    - condition: grafana.enabled
+      name: grafana
+      repository: https://grafana.github.io/helm-charts
+      version: ~6.43.0
+    - condition: prometheus.enabled
+      name: prometheus
+      repository: https://prometheus-community.github.io/helm-charts
+      version: ~19.7.2
+    - condition: jaeger.enabled
+      name: jaeger
+      repository: https://jaegertracing.github.io/helm-charts
+      version: 3.0.10
+    - condition: opensearch.enabled
+      name: opensearch
+      repository: https://opensearch-project.github.io/helm-charts/
+      version: 2.20.0
+    - condition: prometheus-elasticsearch-exporter.enabled
+      name: prometheus-elasticsearch-exporter
+      repository: https://prometheus-community.github.io/helm-charts
+      version: 5.8.0
+    - condition: opentelemetry-collector.enabled
+      name: opentelemetry-collector
+      repository: https://open-telemetry.github.io/opentelemetry-helm-charts
+      version: 0.92.0
+    - condition: traefik.enabled
+      name: traefik
+      repository: https://traefik.github.io/charts
+      version: 28.1.0
+    description: A Helm chart for Falcon Eye Monitoring
+    digest: 33a1da550785c8f3b4fc50e339d2f2baaed04c9208af44b3c9fdc463d9ff9dcd
+    name: fem
+    type: application
+    urls:
+    - https://github.com/FLiPp3r90/helm-charts/releases/download/fem-0.2.3/fem-0.2.3.tgz
+    version: 0.2.3
+  - apiVersion: v2
+    appVersion: 1.1.0
     created: "2024-05-30T12:24:50.384905486Z"
     dependencies:
     - condition: loki.enabled
@@ -440,4 +483,4 @@ entries:
     urls:
     - https://github.com/FLiPp3r90/helm-charts/releases/download/fem-0.1.0/fem-0.1.0.tgz
     version: 0.1.0
-generated: "2024-05-30T12:24:50.384989874Z"
+generated: "2024-05-30T12:38:04.321297718Z"
