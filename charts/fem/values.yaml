@@ -41,7 +41,9 @@ opensearch:
   enabled: true
   extraEnvs:
     - name: DISABLE_INSTALL_DEMO_CONFIG
-      value: "true"
+      value: "false"
+    - name: OPENSEARCH_INITIAL_ADMIN_PASSWORD
+      value: example123
 
 prometheus-elasticsearch-exporter:
   enabled: true
